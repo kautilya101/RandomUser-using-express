@@ -1,0 +1,70 @@
+<html>  
+    <head> 
+        <title>Dynamic Rendering</title> 
+    </head>
+    <style>
+        body {padding: 1em;}
+        table{
+            border : 1px solid  black;
+            width: 100%;
+        }
+        th{
+            border : 1px solid  black;
+        }
+        td{
+            border : 1px solid  black;
+            text-align: center;
+        }
+
+        input,select{
+            margin: 10px 10px;
+            padding: 5px;
+        }
+        button{
+            padding : 5px;
+        }
+        
+    </style>
+
+    
+    <body>  
+      
+          <input type="text" id="nameSearch" name="fullName" placeholder="Search..." onkeyup="search()">
+
+          <select name="sort" id="sort">
+            <option value="ascend">ASCE</option>
+            <option value="descend">DESC</option>
+          </select>
+
+          <select name="options" id="option">
+            <option value="1">Name</option>
+            <option value="2">Gender</option>
+            <option value="3">Age</option>
+            <option value="4">State</option>
+            <option value="5">Country</option>
+
+          </select>
+
+          <button onclick="sort()"> SORT </button>
+          
+          
+        
+
+        <table id = tb>
+            <tr>
+                <th>PHOTO</th>
+                <th>NAME</th>
+                <th>GENDER</th>
+                <th>AGE</th>
+                <th>STATE</th>
+                <th>COUNTRY</th>
+            </tr>
+
+            
+        </table>
+        
+
+    <script  src = "randomuser.js"></script>
+    </body>
+    
+</html> 
